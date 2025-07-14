@@ -1,5 +1,7 @@
 #include "Coin.h"
 
+using namespace std;
+
 Coin::Coin() : centValue(1), isHeads(1) {
 
 }
