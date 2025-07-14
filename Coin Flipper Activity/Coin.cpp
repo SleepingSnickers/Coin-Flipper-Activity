@@ -2,24 +2,24 @@
 
 using namespace std;
 
-Coin::Coin() : centValue(1), isHeads(1) {
+Coin::Coin() : centValue(1), isHeads(true) {
 
 }
 
 Coin::Coin(int value) : centValue(value) {
-
+	isHeads = true;
 }
 
 void Coin::flip() {
 	isHeads = rand() % 2;
 }
 
-const bool Coin::isItHeads() {
+bool Coin::isItHeads() const {
 	return isHeads;
 }
 
-const string Coin::getSideUp() {
-	if (isHeads == 1) {
+string Coin::getSideUp() const {
+	if (isHeads) {
 		return "Heads";
 	}
 	else {
@@ -27,6 +27,6 @@ const string Coin::getSideUp() {
 	}
 }
 
-const int Coin::getCentValue() {
+int Coin::getCentValue() const {
 	return centValue;
 }

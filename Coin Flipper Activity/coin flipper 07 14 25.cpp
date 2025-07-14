@@ -12,10 +12,10 @@ int main() {
 	srand(time(0));
 	
 	Game myGame;
-	myGame.printFlipResults();
-
+	myGame.playGame();
 
 	//Part One
+	//
 	//Coin coin;
 	//int heads = 0;
 	//int tails = 0;

@@ -16,9 +16,9 @@ public:
 	Coin(int);
 	
 	void flip();
-	const bool isItHeads();
-	const string getSideUp();
-	const int getCentValue();
+	bool isItHeads() const;
+	string getSideUp() const;
+	int getCentValue() const;
 };
 
 
