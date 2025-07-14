@@ -9,11 +9,11 @@ Coin::Coin(int value) : centValue(value) {
 }
 
 void Coin::flip() {
-	isHeads = rand() % 2 + 1;
+	isHeads = rand() % 2;
 }
 
 const bool Coin::isItHeads() {
-	return isItHeads;
+	return isHeads;
 }
 
 const string Coin::getSideUp() {
